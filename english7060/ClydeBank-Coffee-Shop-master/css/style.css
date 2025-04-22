@@ -1,0 +1,185 @@
+/* General Settings */
+@media only screen 
+and (min-device-width: 375px)
+and (max-device-width: 750px)
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    font-size: 16px;
+    font-family: "Arial", Helvetica, sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+main { 
+    display: block;
+    padding: 30px 0;
+}
+
+* { outline: none !important; }
+
+
+/*Reduce padding in main element */
+main { padding: 5px; }
+
+/* Fix nav bar */
+nav { height: 35px; }
+nav ul { padding-top: 7px; }
+nav li {display: inline; }
+nav li a { color: white;}
+
+/* Add exrta spacing between menue items */
+.menu-item.additional-items h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    float: none;
+}
+
+/*reduce footer header size and add some padding */
+footer h2 {
+    font-size: 1.4em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/* Reduce size of footer tect to avoid awkward wrapping */
+footer li {font-size: 1em; }
+
+/* Add padding to bottom of footer */
+footer {padding-bottom: 5px; }
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, div, textarea, label {
+    margin: 0;
+}
+
+h2 { font-size: 28px; }
+
+ul {
+	display: flex;
+	flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+p { font-size: 1em; }
+
+img { border-style: none; }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* End General Settings */
+
+/* Header */
+
+header { 
+    background: Sienna; 
+    padding: 10px;
+}
+
+.title-header .title {
+    display: inline-block;
+    color: #542b00;
+    font-size: 18px;
+}
+
+.title-header .logo {
+    display: inline-block;
+}
+
+.title-header .logo img {
+    vertical-align: middle;
+}
+
+nav { background: saddlebrown;}
+nav li a { 
+    color: white;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+/* End Header */
+
+/* Footer */
+
+footer {
+    background: saddlebrown;
+    color: #fff;
+    padding: 10px;  
+    height: 100px;
+}
+
+footer a { color: chocolate; }
+
+/* End Footer */
+
+/* Home Page Content */
+
+.menu-item.additional-items h2 {
+    width: 50%;
+    float: left;
+}
+
+.menu-item .item-inner {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap:20px;
+	background: #FFFFFF;
+	border: 2px soild #333;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.menu-item .item-inner ul {
+    flex: 1 1 45%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* End Home Page Content */
+
+/* Page Content */
+
+.event-item {
+    margin-bottom: 25px;
+    border: 1px solid #000
+}
+
+#top-announcement {
+    position: relative;
+    top: 0;
+    right: 0;
+    left:0 ;
+    background-color: yellow; 
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: black;
+
+}
+/* End Page Content */

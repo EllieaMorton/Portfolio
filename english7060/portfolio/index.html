@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Morton's Portfolio</title>
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'EB Garamond', serif;
+            color: #540;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .content .image-container img.main-image {
+            max-width: 300px;
+            position: relative;
+            z-index: 2;
+        }
+        .content .text-column {
+            max-width: 600px;
+            margin-left: 20px;
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        footer {
+            margin-top: 30px;
+        }
+        /* Style for the View Work button */
+        .view-work-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #540;
+            border: 2px solid #540;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .view-work-button:hover {
+            background-color: #540;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home Page</a> <!-- Updated Home link to portfolio.html -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a> <!-- Updated Home link -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mywork.html">My Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="content container mt-5">
+    <!-- Main Image -->
+    <div class="image-container">
+        <a href="images/homeimg.jpg">
+            <img src="images/homeimg.jpg" alt="Picture of Ellie Morton" class="main-image">
+        </a>
+    </div>
+    
+    <!-- Text on the right -->
+    <div class="text-column">
+        <h1>Hi!&nbsp;</h1>
+        <h1>I'm Ellie Morton&nbsp;&nbsp;</h1>
+        <p>I am pursuing my Master’s in Rhetoric and Composition at Auburn University, along with a Certificate in Technical and Professional Communication, and I am expected to graduate in the spring of 2026. I earned my Bachelor’s degree from Auburn University in English Literature with a Minor in Human Development and Family Sciences. I am eager to continue learning and always ready for a new challenge!</p>
+        <!-- View Work Button -->
+        <a href="mywork.html" class="view-work-button" id="view-work-btn">View Work</a>
+    </div>
+</div>
+
+<!-- Resume Section -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>My Resume</h2>
+            <p>View or download my resume by clicking the link below:</p>
+            <a href="files/resume.pdf" class="view-work-button" target="_blank">Download Resume</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-3">
+    <p>&copy; 2025 Ellie Morton. All rights reserved.</p>
+</footer>
+	
