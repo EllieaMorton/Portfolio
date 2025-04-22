@@ -1,0 +1,60 @@
+//* Fade effect for page transitions */
+body {
+    opacity: 0;
+    animation: fadeIn ease 0.8s forwards;
+}
+
+/* Back button styling */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #540;
+    border: 2px solid #540;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Back button hover effect */
+.back-button:hover {
+    background-color: #540;
+    color: #fff;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Image container styling */
+.content .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Background image positioned behind */
+.content .image-container::before {
+    content: "";
+    background: url('images/backgroundcolor.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -15px; /* Adjust vertical position */
+    left: -15px; /* Adjust horizontal position */
+    width: 320px; /* Slightly larger than main image */
+    height: 320px;
+    z-index: 1; /* Keep it behind */
+    border-radius: 5px; /* Optional for softer corners */
+}
+
+/* Main image stays on top */
+.content .image-container img.main-image {
+    position: relative;
+    z-index: 2; /* Ensure it's on top */
+    max-width: 300px;
+    border-radius: 5px;
+}
